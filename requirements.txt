@@ -1,0 +1,2 @@
+polyapi-python==0.3.2
+pre-commit==4.0.1
