@@ -34,13 +34,22 @@ And lastly you'll need a github account, and be able to make commits to it from 
 
 6. Update the `pyproject.toml` name, description, author, and license fields to your satisfaction. And modify or delete the `README.md` file to be relevant for your project.
 
-7. Install all needed project dependencies using `pip install -r requirements.txt`.
+7. Setup your Python virtual environment. For more on Python virtual environments, we recommend this [venv](https://realpython.com/python-virtual-environments-a-primer/) primer.
+   ```
+   python -m venv myvenv
+   source myvenv/bin/activate
+   ```
+   Replace myvenv with whatever you'd like your venv to be named!
 
-8. Setup the polyapi client by running `python -m poly setup` and putting in your instance url and api key.
+For more on Python virtual environments, we recommend this venv primer.
 
-9. Run `python -m poly generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
+8. Install all needed project dependencies using `pip install -r requirements.txt`.
 
-10. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
+9. Setup the polyapi client by running `python -m poly setup` and putting in your instance url and api key.
+
+10. Run `python -m poly generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
+
+11. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
 
 And that's it! Your project should now be ready to develop and deploy to PolyAPI.
 
