@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: poly-prepare
+        name: Run Poly Prepare
+        entry: python -m polyapi prepare
+        language: python
+        types: [python]
+        additional_dependencies: []
