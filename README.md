@@ -36,18 +36,15 @@ And lastly you'll need a github account, and be able to make commits to it from 
 
 7. Setup your Python virtual environment. For more on Python virtual environments, we recommend this [venv](https://realpython.com/python-virtual-environments-a-primer/) primer.
    ```
-   python -m venv myvenv
-   source myvenv/bin/activate
+   python -m venv .venv
+   source .venv/bin/activate
    ```
-   Replace myvenv with whatever you'd like your venv to be named!
-
-For more on Python virtual environments, we recommend this venv primer.
 
 8. Install all needed project dependencies using `pip install -r requirements.txt`.
 
-9. Setup the polyapi client by running `python -m poly setup` and putting in your instance url and api key.
+9. Setup the polyapi client by running `python -m polyapi setup` and putting in your instance url and api key.
 
-10. Run `python -m poly generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
+10. Run `python -m polyapi generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
 
 11. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
 
@@ -59,7 +56,7 @@ And that's it! Your project should now be ready to develop and deploy to PolyAPI
 
 2. Commit your changes using git by running something like: `git commit -am 'some useful message describing my changes here...'`
 
-3. Watch the `poly prepare` command run and catalog all your deployable functions.
+3. Watch the `polyapi prepare` command run and catalog all your deployable functions.
 
 4. If the prepare command made changes to any code comments then your commit will be paused to give you a chance to review those changes.  If changes were made review, edit, and commit.
 
