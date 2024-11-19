@@ -1,9 +1,11 @@
 from polyapi.typedefs import PolyServerFunction
 
+
 polyConfig: PolyServerFunction = {
     "name": "hello_poly",
     "context": "demo",
 }
+
 
 def hello_poly(first_name: str) -> str:
     """Greet new users of Poly
