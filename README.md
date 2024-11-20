@@ -39,6 +39,7 @@ And lastly you'll need a github account, and be able to make commits to it from 
    python -m venv .venv
    source .venv/bin/activate
    ```
+   NOTE: If you customize your virtual environment name you will need to update the `.pre-commit-config.yaml` to put the correct name into the entry command.
 
 8. Install all needed project dependencies using `pip install -r requirements.txt`.
 
