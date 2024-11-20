@@ -3,7 +3,8 @@ repos:
     hooks:
       - id: poly-prepare
         name: Run Poly Prepare
-        entry: python -m polyapi prepare
-        language: python
+        entry: python3 -m polyapi prepare
+        language: system
         types: [python]
+        pass_filenames: false
         additional_dependencies: []

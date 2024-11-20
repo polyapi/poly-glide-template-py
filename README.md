@@ -42,11 +42,13 @@ And lastly you'll need a github account, and be able to make commits to it from 
 
 8. Install all needed project dependencies using `pip install -r requirements.txt`.
 
-9. Setup the polyapi client by running `python -m polyapi setup` and putting in your instance url and api key.
+9. Install the git pre-commit hooks `python -m pre-commit install`.
 
-10. Run `python -m polyapi generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
+10. Setup the polyapi client by running `python -m polyapi setup` and putting in your instance url and api key.
 
-11. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
+11. Run `python -m polyapi generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
+
+12. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
 
 And that's it! Your project should now be ready to develop and deploy to PolyAPI.
 
