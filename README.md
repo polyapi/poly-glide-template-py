@@ -43,7 +43,7 @@ And lastly you'll need a github account, and be able to make commits to it from 
 
 8. Install all needed project dependencies using `pip install -r requirements.txt`.
 
-9. Install the git pre-commit hooks `python -m pre-commit install`.
+9. Install the git pre-commit hooks `python -m pre_commit install`.
 
 10. Setup the polyapi client by running `python -m polyapi setup` and putting in your instance url and api key.
 
