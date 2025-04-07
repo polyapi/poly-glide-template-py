@@ -12,8 +12,16 @@ jobs:
       cancel-in-progress: true
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Latest Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"  # stay under 3.13 for now to avoid build errors with pydantic-core
+
       - name: Poly Deploy
-        uses: polyapi/poly-deployment-action-py@v0.0.4
+        uses: polyapi/poly-deployment-action-py@v0.0.5
         with:
           poly_api_key: ${{ secrets.POLY_API_KEY_PROD }}
           poly_api_base_url: ${{ secrets.POLY_API_BASE_URL_PROD }}
