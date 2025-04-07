@@ -30,26 +30,32 @@ And lastly you'll need a github account, and be able to make commits to it from 
    
    See [Github documentation](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) for more details on creating secrets.
 
-5. Connect you local project with your new remote repository by running `git remote add origin https://github.com/yourusername/your-repository-name.git` followed by `git push --set-upstream origin main`
+5. Update Github actions workflow permissions to `Read and write permissions`
 
-6. Update the `pyproject.toml` name, description, author, and license fields to your satisfaction. And modify or delete the `README.md` file to be relevant for your project.
+    ![alt text](image.png)
 
-7. Setup your Python virtual environment. For more on Python virtual environments, we recommend this [venv](https://realpython.com/python-virtual-environments-a-primer/) primer.
+    click `Save`
+
+6. Connect you local project with your new remote repository by running `git remote add origin https://github.com/yourusername/your-repository-name.git` followed by `git push --set-upstream origin main`
+
+7. Update the `pyproject.toml` name, description, author, and license fields to your satisfaction. And modify or delete the `README.md` file to be relevant for your project.
+
+8. Setup your Python virtual environment. For more on Python virtual environments, we recommend this [venv](https://realpython.com/python-virtual-environments-a-primer/) primer.
    ```
    python -m venv .venv
    source .venv/bin/activate
    ```
    NOTE: If you customize your virtual environment name you will need to update the `.pre-commit-config.yaml` to put the correct name into the entry command.
 
-8. Install all needed project dependencies using `pip install -r requirements.txt`.
+9. Install all needed project dependencies using `pip install -r requirements.txt`.
 
-9. Install the git pre-commit hooks `python -m pre_commit install`.
+10. Install the git pre-commit hooks `python -m pre_commit install`.
 
-10. Setup the polyapi client by running `python -m polyapi setup` and putting in your instance url and api key.
+11. Setup the polyapi client by running `python -m polyapi setup` and putting in your instance url and api key.
 
-11. Run `python -m polyapi generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
+12. Run `python -m polyapi generate` to generate the full, up-to-date python SDK for PolyAPI (which includes functions Poly makes available out of the box as well as any functions other members of your team might create and publish).
 
-12. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
+13. Optionally remove the `./examples` directory with it's example `hello_poly.py` function.
 
 And that's it! Your project should now be ready to develop and deploy to PolyAPI.
 
