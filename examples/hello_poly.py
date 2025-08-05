@@ -1,4 +1,4 @@
-# Poly deployed @ 2025-04-07T21:42:27.901912 - demo.hello_poly - https://na1.polyapi.io/canopy/polyui/collections/server-functions/327f44ec-6ae2-4613-9454-12da55d67fe0 - b7c9bcf
+# Poly deployed @ 2025-08-05T16:37:55.110042 - demo.hello_poly - https://na1.polyapi.io/canopy/polyui/collections/server-functions/76a23874-6ff6-4900-b81e-f62979bcf3b9 - b7c9bcf
 from polyapi.typedefs import PolyServerFunction
 
 
