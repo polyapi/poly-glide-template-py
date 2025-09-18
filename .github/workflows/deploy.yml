@@ -13,15 +13,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup Latest Python 3.12
-        uses: actions/setup-python@v4
+      - name: Setup Latest Python 3.13
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: '3.13'
+          check-latest: true
 
       - name: Poly Deploy
-        uses: polyapi/poly-deployment-action-py@v0.0.6
+        uses: polyapi/poly-deployment-action-py@v0.0.8
         with:
           poly_api_key: ${{ secrets.POLY_API_KEY_PROD }}
           poly_api_base_url: ${{ secrets.POLY_API_BASE_URL_PROD }}
